@@ -1,0 +1,192 @@
+/* Reset and base styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Includes padding and border in element's total width/height */
+}
+
+/* Body styles - centers content vertically and horizontally */
+body {
+    font-family: "Karla", sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main container styles */
+main {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem; /* 8px */
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.3); /* 0px 4px 6px */
+}
+
+/* Upper section styles */
+.upper-section {
+    background-color: white;
+    padding: 3.25rem 3.3125rem; /* 52px 53px */
+    border-top-left-radius: 0.5rem; /* 8px */
+    border-top-right-radius: 0.5rem; /* 8px */
+}
+
+/* Join community paragraph */
+.join-para {
+    color: hsl(179, 62%, 43%);
+    font-size: 1.5rem; /* 24px */
+    font-weight: 700;
+    padding-bottom: 2.25rem; /* 36px */
+}
+
+/* 30-day guarantee paragraph */
+.day-para {
+    color: hsl(71, 73%, 54%);
+    font-size: 1.125rem; /* 18px */
+    font-weight: 700;
+    padding-bottom: 1.125rem; /* 18px */
+}
+
+/* Description paragraph */
+.des-para {
+    color: hsl(218, 22%, 67%);
+    font-weight: 400;
+    width: 33rem; /* 528px */
+    line-height: 1.5rem; /* 24px */
+}
+
+/* Lower section grid layout */
+.lower-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+}
+
+/* Left part - subscription details */
+.left-part {
+    flex: 1;
+    background-color: hsl(179, 62%, 43%);
+    padding: 3.25rem 3.3125rem; /* 52px 53px */
+    border-bottom-left-radius: 0.5rem; /* 8px */
+}
+
+/* Right part - features list */
+.right-part {
+    flex: 1;
+    background-color: hsla(179, 62%, 43%, 0.7);
+    padding: 3.25rem 3.3125rem; /* 52px 53px */
+    border-bottom-right-radius: 0.5rem; /* 8px */
+}
+
+/* Monthly subscription heading */
+.month-para {
+    font-size: 1.125rem; /* 18px */
+    font-weight: 700;
+    padding-bottom: 2.25rem; /* 36px */
+}
+
+/* Price paragraph */
+.per-para {
+    font-size: 2rem; /* 32px */
+    font-weight: 700;
+    padding-bottom: 1.125rem; /* 18px */
+}
+
+/* "per month" text */
+.permon-para {
+    font-size: 1rem; /* 16px */
+    font-weight: 400;
+    color: hsl(204, 43%, 93%);
+}
+
+/* Full access paragraph */
+.full-para {
+    padding-bottom: 2.25rem; /* 36px */
+    font-weight: 400;
+    width: auto;
+}
+
+/* Sign up button */
+.sign-but {
+    width: 100%;
+    padding: 1rem; /* 16px */
+    border: none;
+    border-radius: 0.25rem; /* 4px */
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    box-shadow: 0 0.25rem 0.4375rem rgba(0, 0, 0, 0.15); /* 0px 4px 7px */
+}
+
+/* "Why Us" heading */
+.why-para {
+    font-size: 1.125rem; /* 18px */
+    font-weight: 700;
+    padding-bottom: 2.25rem; /* 36px */
+}
+
+/* Tutorial/feature items */
+.tut-para {
+    font-weight: 400;
+    padding-bottom: 0.25rem; /* 4px */
+    color: hsl(204, 43%, 93%);
+}
+
+/* Mobile responsive styles */
+@media (max-width: 50rem) { /* 800px */
+    body {
+        height: auto;
+        margin: 4.5rem 2rem; /* 72px 32px */
+    }
+    
+    .lower-section {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .left-part,
+    .right-part,
+    .upper-section {
+        padding: 1.875rem 1.5rem; /* 30px 24px */
+    }
+    
+    .left-part {
+        border-bottom-left-radius: 0;
+    }
+    
+    .right-part {
+        border-bottom-left-radius: 0.5rem; /* 8px */
+    }
+    
+    .join-para {
+        font-size: 1.1875rem; /* 19px */
+        padding-bottom: 1.75rem; /* 28px */
+    }
+    
+    .des-para {
+        width: auto;
+        font-size: 0.8125rem; /* 13px */
+    }
+    
+    .day-para {
+        font-size: 0.875rem; /* 14px */
+    }
+    
+    .month-para {
+        font-size: 1.0625rem; /* 17px */
+        padding-bottom: 1.75rem; /* 28px */
+    }
+    
+    .per-para {
+        font-size: 1.875rem; /* 30px */
+    }
+    
+    .full-para {
+        font-size: 0.9375rem; /* 15px */
+    }
+    
+    .why-para {
+        font-size: 1rem; /* 16px */
+        padding-bottom: 1.75rem; /* 28px */
+    }
+}
